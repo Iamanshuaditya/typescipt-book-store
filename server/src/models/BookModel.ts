@@ -13,7 +13,8 @@ const BookSchema = new mongoose.Schema({
   categories: Array,
 });
 
-const BookModel = mongoose.model("Book", BookSchema);
+const BookModel = mongoose.model('Book', BookSchema,'MyDataBase' );
+
 
 export default BookModel
-// there is no such things as findAll in mongodb
+ 

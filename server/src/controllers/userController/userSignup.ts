@@ -4,7 +4,8 @@ import bcrypt from  "bcrypt"
 require("dotenv").config();
 const jwtSecretKey = process.env.JWT_SECRET_KEY as Secret;
 import { Response,Request } from "express";
-const signup = async (req:Request, res:Response) => {
+const signup = async (req: Request, res: Response) => {
+  console.log("Received signup request");
   try {
     const { name, username, password } = req.body;
 
